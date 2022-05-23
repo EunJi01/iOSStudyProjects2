@@ -1,5 +1,7 @@
 import UIKit
 
+// * 변수, 상수
+
 //var greeting = "Hello, playground"
 
 //var num = 5
@@ -29,6 +31,7 @@ import UIKit
 
 
 
+// * bool-array
 
 //let isMan = true
 //let isHuman = false
@@ -42,11 +45,6 @@ import UIKit
 //
 //let message = "\(maximumAge) 할머니도 배우는 iOS 개발은 \(difficulty)"
 //// "80 할머니도 배우는 iOS 개발은 쉽다"
-
-
-
-
-
 
 //// Array
 //let ages = [3, 20, 60]
@@ -70,6 +68,7 @@ import UIKit
 
 
 
+// * enum
 
 //// 요일을 한번 enum으로 만들어 보겠습니다.
 //enum WeekDay {
@@ -106,6 +105,7 @@ import UIKit
 
 
 
+// * 조건문, 반복문
 
 //let age = 10
 //
@@ -189,6 +189,7 @@ import UIKit
 
 
 
+// * 옵셔널
 
 //// Dictionary (Key: Value)
 //let languageCode = [
@@ -277,3 +278,192 @@ import UIKit
 //    return partialResult + next
 //}
 //// 600
+
+
+
+
+
+// * 함수, 클로저
+
+//struct Album {
+//        // 멤버 변수들
+//        // stored property
+//    let title: String
+//    let artist: String
+//    var isReleased = false
+//
+//    func description() -> String {
+//        return "\(title) by \(artist)"
+//    }
+//
+//        // 구조체 내부 멤버 변수의 값을 변경하는 경우, mutating 키워드 이용
+//    mutating func release() {
+//        self.isReleased = true
+//    }
+//}
+//
+//var easyOnMe = Album(title: "Easy On Me", artist: "Adele")
+//print(easyOnMe.description())
+//// Easy On Me by Adele
+//
+//print(easyOnMe.isReleased)
+//easyOnMe.release()
+//print(easyOnMe.isReleased)
+//// false
+//// true
+
+//class Employee {
+//    var name: String
+//    var hours: Int
+//
+//    init(name: String, hours: Int) {
+//        self.name = name
+//        self.hours = hours
+//    }
+//
+//    func work() {
+//        print("I'm working now...")
+//    }
+//
+//    func summary() {
+//        print("I work \(self.hours) hours a day. ")
+//    }
+//}
+//
+//class iOSDeveloper: Employee {
+//
+//    override func work() {
+//        print("I'm developing iOS app now.")
+//    }
+//
+//    override func summary() {
+//        print("I work \(self.hours/2) hours a day.")
+//    }
+//}
+//
+//struct Phone {
+//    var modelName: String
+//    var manufacturer: String
+//    var version: Double = 1.0
+//}
+//
+//let normalWorker = Employee(name: "Kim", hours: 8)
+//normalWorker.work()
+//normalWorker.summary()
+////    I'm working now...
+////    I work 8 hours a day.
+//
+//let developer = iOSDeveloper(name: "Jason", hours: 8)
+//developer.work()
+//developer.summary()
+////    I'm developing iOS app now.
+////    I work 4 hours a day.
+//
+//// Reference vs. Copy
+//var iPhone1 = Phone(modelName: "iPhone 13", manufacturer: "Apple")
+//var iPhone2 = iPhone1
+//iPhone2.modelName = "iPhone 14"
+//print(iPhone2.modelName)
+//print(iPhone1.modelName)
+////    iPhone 14
+////    iPhone 13
+//
+//var jrDeveloper1 = iOSDeveloper(name: "John", hours: 8)
+//var jrDeveloper2 = jrDeveloper1
+//jrDeveloper1.name = "Billy"
+//print(jrDeveloper1.name)
+//print(jrDeveloper2.name)
+////    Billy
+////    Billy
+
+
+
+
+
+// * 클래스 구조체
+
+//struct Watch {
+//    let model: String
+//    let manufacturer: String
+//
+//    var description: String {
+//        return "\(model) by \(manufacturer)"
+//    }
+//}
+//
+//struct Person {
+//    let firstName: String
+//    let lastName: String
+//
+//    var fullName: String {
+//        return "\(firstName) \(lastName)"
+//    }
+//}
+//
+//let appleWatch = Watch(model: "Watch 7", manufacturer:  "Apple")
+//print(appleWatch.description)
+//// Watch 7 by Apple
+//
+//let jason = Person(firstName: "Jason", lastName: "Lee")
+//print(jason.fullName)
+//// Jason Lee
+
+
+
+
+
+// * 프로토콜
+
+//protocol Coach {
+//    var name: String { get set }
+//    var currentTeam: String { get }
+//    func training()
+//    func direct()
+//}
+//
+//struct Mourinho: Coach {
+//    var name: String = "Jose Mourinho"
+//    var currentTeam: String = "AS Roma"
+//
+//    func training() {
+//        print("Traing Player")
+//    }
+//
+//    func direct() {
+//        print("Direct Game")
+//    }
+//}
+//
+//let mourinho = Mourinho()
+//print("\(mourinho.name), \( mourinho.currentTeam)")
+//mourinho.training()
+//mourinho.direct()
+//
+////    Jose Mourinho, AS Roma
+////    Traing Player
+////    Direct Game
+
+
+
+
+
+// * 익스텐션
+
+//extension String {
+//    func contains(s: String) -> Bool {
+//        return self.range(of: s) != nil
+//    }
+//
+//    func replace(target: String, with: String) -> String {
+//        return self.replacingOccurrences(of: target, with: with)
+//    }
+//}
+//
+//
+//let testString = "Hello iOS Developer!!"
+//let replaced = testString.replace(target: "Hello", with: "안녕하세요")
+//
+//print(replaced)
+////    안녕하세요 iOS Developer!!
+//print(testString.contains(s: "iOS"))
+//// true
