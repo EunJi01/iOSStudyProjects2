@@ -5,7 +5,7 @@
 | **1회** | Basics | Complete |  |  | **2022.05.20** |
 | **2회** | AutoLayoutExample | Complete |  |  | **2022.05.25** |
 | **3회** | SymbolRoller | Complete |  |  | **2022.05.25** |
-| **4회** |  | Complete |  |  | **2022.05.** |
+| **4회** | SimpleWeather | Complete |  |  | **2022.05.26** |
 | **5회** |  | Complete |  |  | **2022.05.** |
 | **6회** |  | Complete |  |  | **2022.05.** |
 | **7회** |  | Complete |  |  | **2022.05.** |
