@@ -33,3 +33,4 @@ extension StockModel {
         StockModel(rank: 14, imageName: "DIS", name: "디즈니", price: 138_631, diff: 0.04),
     ]
 }
+

@@ -45,4 +45,6 @@ class StockRankCollectionViewCell: UICollectionViewCell {
         let result = numberFormatter.string(from: NSNumber(value: price)) ?? ""
         return result
     }
+    
+    
 }
