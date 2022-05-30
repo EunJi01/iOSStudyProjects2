@@ -7,7 +7,7 @@
 | **3회** | SymbolRoller | Complete |  |  | **2022.05.25** |
 | **4회** | SimpleWeather | Complete |  |  | **2022.05.26** |
 | **5회** | StockRank | Complete |  |  | **2022.05.27** |
-| **6회** |  | Complete |  |  | **2022.05.** |
+| **6회** | ChatList | Complete |  |  | **2022.05.30** |
 | **7회** |  | Complete |  |  | **2022.05.** |
 | **8회** |  | Complete |  |  | **2022.05.** |
 | **9회** |  | Complete |  |  | **2022.05.** |
@@ -40,11 +40,21 @@
 
 ## **StockRank**
 
-➡️    
-➡️    
+➡️ collectionView를 사용한 리스트 구현   
+➡️ rank, image, name, price, diff를 화면에 출력    
+➡️ diff의 수치에 따라 label의 색상 변경     
 
 📲 실행 화면   
+![Simulator Screen Recording - iPhone 13 - 2022-05-30 at 15 14 44](https://user-images.githubusercontent.com/92143918/170928825-8b1992aa-72bb-45c2-bad3-a67ad3491d2d.gif)
 
 </br>
 </br>
 </br>
+
+## **ChatList**
+
+➡️    
+➡️     
+➡️    
+
+📲 실행 화면  
