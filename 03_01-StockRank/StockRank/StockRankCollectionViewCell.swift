@@ -23,6 +23,18 @@ class StockRankCollectionViewCell: UICollectionViewCell {
         companyIconImageView.image = UIImage(named: stock.imageName)
         companyNameLable.text = stock.name
         companyPriceLable.text = "\(convertToCurrencyFormat(price: stock.price)) 원"
+        
+        // if 문 사용
+//        if stock.diff >= 0 {
+//            diffLable.textColor = .red
+//        }
+//        else {
+//            diffLable.textColor = .blue
+//        }
+        
+        // 삼항연산자 사용
+        diffLable.textColor = stock.diff >= 0 ? .red : .blue
+        
         diffLable.text = "\(stock.diff)%"
     }
     
