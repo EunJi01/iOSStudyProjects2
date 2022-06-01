@@ -42,7 +42,8 @@
 
 ➡️ collectionView를 사용한 리스트 구현   
 ➡️ rank, image, name, price, diff를 화면에 출력    
-➡️ diff의 수치에 따라 label의 색상 변경     
+➡️ diff의 수치에 따라 label의 색상 변경 
+➕ (미완성) likeButton을 탭하면 빈 하트에서 꽉 찬 하트로 변경되도록 구현  
 
 📲 실행 화면   
 ![Simulator Screen Recording - iPhone 13 - 2022-05-30 at 15 14 44](https://user-images.githubusercontent.com/92143918/170928825-8b1992aa-72bb-45c2-bad3-a67ad3491d2d.gif)
