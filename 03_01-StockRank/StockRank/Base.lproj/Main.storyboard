@@ -59,20 +59,28 @@
                                                     <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JW8-0N-Sn3">
-                                                    <rect key="frame" x="354" y="45.5" width="40" height="37.5"/>
-                                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="G4g-ML-l5m"/>
-                                                        <constraint firstAttribute="width" constant="40" id="qhn-O5-WgN"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMS-j5-rwJ">
                                                     <rect key="frame" x="16" y="54" width="29.5" height="20"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <color key="textColor" systemColor="systemBlueColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZN5-OX-O0h">
+                                                    <rect key="frame" x="354" y="44" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="N0v-QP-Z3i"/>
+                                                        <constraint firstAttribute="width" constant="40" id="PKc-TM-7Ob"/>
+                                                    </constraints>
+                                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Like" image="heart.fill" catalog="system"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" scale="large"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="changeLikeButtonTapped:" destination="AxJ-ZM-37H" eventType="touchUpInside" id="Fgs-wp-KVx"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -81,12 +89,12 @@
                                                 <constraint firstItem="pXU-GT-0S2" firstAttribute="top" secondItem="vWM-GQ-9eF" secondAttribute="top" id="Of6-gT-daJ"/>
                                                 <constraint firstItem="lAo-7T-O53" firstAttribute="leading" secondItem="rho-0Z-tNN" secondAttribute="trailing" constant="5" id="X8e-4b-HY0"/>
                                                 <constraint firstItem="vWM-GQ-9eF" firstAttribute="leading" secondItem="6Ku-a1-Q1B" secondAttribute="leading" constant="50" id="a9C-l3-wWa"/>
+                                                <constraint firstItem="ZN5-OX-O0h" firstAttribute="centerY" secondItem="6Ku-a1-Q1B" secondAttribute="centerY" id="cQb-3g-SJA"/>
                                                 <constraint firstItem="RMS-j5-rwJ" firstAttribute="centerY" secondItem="6Ku-a1-Q1B" secondAttribute="centerY" id="fqc-on-jCQ"/>
                                                 <constraint firstItem="rho-0Z-tNN" firstAttribute="top" secondItem="pXU-GT-0S2" secondAttribute="bottom" constant="6.5" id="g3E-5a-RtI"/>
-                                                <constraint firstAttribute="trailing" secondItem="JW8-0N-Sn3" secondAttribute="trailing" constant="20" id="l62-kf-oxW"/>
                                                 <constraint firstItem="vWM-GQ-9eF" firstAttribute="centerY" secondItem="6Ku-a1-Q1B" secondAttribute="centerY" id="l8B-yl-IBq"/>
                                                 <constraint firstItem="pXU-GT-0S2" firstAttribute="leading" secondItem="vWM-GQ-9eF" secondAttribute="trailing" constant="20" id="lgy-Zj-oKO"/>
-                                                <constraint firstItem="JW8-0N-Sn3" firstAttribute="centerY" secondItem="6Ku-a1-Q1B" secondAttribute="centerY" id="ow7-Pc-1O8"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZN5-OX-O0h" secondAttribute="trailing" constant="20" id="qm4-d0-HWQ"/>
                                                 <constraint firstItem="lAo-7T-O53" firstAttribute="centerY" secondItem="rho-0Z-tNN" secondAttribute="centerY" id="uaY-m2-lWF"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -96,6 +104,7 @@
                                             <outlet property="companyNameLable" destination="pXU-GT-0S2" id="Aou-sg-V8Y"/>
                                             <outlet property="companyPriceLable" destination="rho-0Z-tNN" id="7Ud-z4-tF1"/>
                                             <outlet property="diffLable" destination="lAo-7T-O53" id="Ioz-EY-mb0"/>
+                                            <outlet property="likeButton" destination="ZN5-OX-O0h" id="5B9-H4-sDl"/>
                                             <outlet property="rankLable" destination="RMS-j5-rwJ" id="9xt-tY-KKF"/>
                                         </connections>
                                     </collectionViewCell>
@@ -121,7 +130,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

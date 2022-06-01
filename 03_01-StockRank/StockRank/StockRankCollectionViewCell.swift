@@ -17,6 +17,7 @@ class StockRankCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var companyNameLable: UILabel!
     @IBOutlet weak var companyPriceLable: UILabel!
     @IBOutlet weak var diffLable: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
     
     func configure(_ stock: StockModel) {
         rankLable.text = "\(stock.rank)"
@@ -46,5 +47,20 @@ class StockRankCollectionViewCell: UICollectionViewCell {
         return result
     }
     
+    var lButton :Bool = true
     
+         // likeButton을 탭하였을 때 색상을 변경시켜보자
+    @IBAction func changeLikeButtonTapped(_ sender: Any) {
+            print("버튼 눌림")
+    
+            lButton = !lButton
+    
+            if lButton {
+                likeButton.setImage(UIImage(named: "heart"), for: .normal)
+            } else {
+                likeButton.setImage(UIImage(named: "heart.fill"), for: .normal)
+            }
+    
+            print("변경 완료")
+        }
 }
