@@ -46,7 +46,7 @@
 ➕ likeButton을 탭하면 빈 하트에서 꽉 찬 하트로 변경되도록 구현 -> [버튼 관련 issue](https://github.com/EunJi01/iosSwiftStudy/issues/1)</br>
 
 📲 실행 화면   
-![Simulator Screen Recording - iPhone 13 - 2022-05-30 at 15 14 44](https://user-images.githubusercontent.com/92143918/170928825-8b1992aa-72bb-45c2-bad3-a67ad3491d2d.gif)
+![Simulator Screen Recording - iPhone 13 - 2022-06-03 at 18 35 21](https://user-images.githubusercontent.com/92143918/171829467-332a9770-b973-4192-a72a-156f85225ecf.gif)
 
 </br>
 </br>
