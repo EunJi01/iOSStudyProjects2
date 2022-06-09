@@ -5,23 +5,91 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chat List View Controller-->
         <scene sceneID="Wcr-dN-7rT">
             <objects>
-                <viewController id="7f0-Hl-YqI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatListViewController" id="7f0-Hl-YqI" customClass="ChatListViewController" customModule="ChatList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPs-n4-Q7F">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="g9f-Hf-Kjo">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UKc-nT-DKa">
+                                    <size key="itemSize" width="428" height="122"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KMi-OY-6st">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="122"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GiC-JP-GfP">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="122"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xMj-Mx-XsG">
+                                                    <rect key="frame" x="16" y="21" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="Ezb-hX-r8d"/>
+                                                        <constraint firstAttribute="height" constant="80" id="gZX-6e-sp2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nm-gr-vvK">
+                                                    <rect key="frame" x="116" y="21" width="39" height="27"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-6M-9ku">
+                                                    <rect key="frame" x="115.99999999999999" y="53" width="62.333333333333329" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apr 4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B5-cR-idG">
+                                                    <rect key="frame" x="367.66666666666669" y="50" width="44.333333333333314" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4B5-cR-idG" firstAttribute="centerY" secondItem="GiC-JP-GfP" secondAttribute="centerY" id="0yo-Cf-hmR"/>
+                                                <constraint firstItem="4B5-cR-idG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lUX-6M-9ku" secondAttribute="trailing" constant="10" id="RKt-bp-J7H"/>
+                                                <constraint firstItem="lUX-6M-9ku" firstAttribute="leading" secondItem="7nm-gr-vvK" secondAttribute="leading" id="dxW-ZP-65q"/>
+                                                <constraint firstAttribute="trailing" secondItem="4B5-cR-idG" secondAttribute="trailing" constant="16" id="foX-Kc-JO4"/>
+                                                <constraint firstItem="lUX-6M-9ku" firstAttribute="top" secondItem="7nm-gr-vvK" secondAttribute="bottom" constant="5" id="loy-4x-bTw"/>
+                                                <constraint firstItem="7nm-gr-vvK" firstAttribute="leading" secondItem="xMj-Mx-XsG" secondAttribute="trailing" constant="20" id="lza-93-RS2"/>
+                                                <constraint firstItem="7nm-gr-vvK" firstAttribute="top" secondItem="xMj-Mx-XsG" secondAttribute="top" id="t6J-Ha-He8"/>
+                                                <constraint firstItem="xMj-Mx-XsG" firstAttribute="centerY" secondItem="GiC-JP-GfP" secondAttribute="centerY" id="vpp-Ga-0Fu"/>
+                                                <constraint firstItem="xMj-Mx-XsG" firstAttribute="leading" secondItem="GiC-JP-GfP" secondAttribute="leading" constant="16" id="zqQ-mO-nL4"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="428" height="122"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IVt-hL-poe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g9f-Hf-Kjo" firstAttribute="leading" secondItem="IVt-hL-poe" secondAttribute="leading" id="PJJ-5k-hhA"/>
+                            <constraint firstItem="IVt-hL-poe" firstAttribute="trailing" secondItem="g9f-Hf-Kjo" secondAttribute="trailing" id="eU6-EM-Xt7"/>
+                            <constraint firstItem="IVt-hL-poe" firstAttribute="bottom" secondItem="g9f-Hf-Kjo" secondAttribute="bottom" id="gLg-8Y-44T"/>
+                            <constraint firstItem="g9f-Hf-Kjo" firstAttribute="top" secondItem="IVt-hL-poe" secondAttribute="top" id="gYR-uJ-JdC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bXZ-ih-qtw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-142" y="113"/>
+            <point key="canvasLocation" x="-142.99065420560746" y="112.74298056155509"/>
         </scene>
     </scenes>
     <resources>
