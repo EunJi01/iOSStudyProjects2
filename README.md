@@ -54,9 +54,12 @@
 
 ## **ChatList**
 
-➡️    
-➡️     
-➡️    
+➡️ Constraints에서 거리를 정해줄 때 constant를 =뿐만 아니라 >=, <=등으로도 설정할 수 있다.    
+➡️ 레이아웃이 설정한 크기대로 나타나지 않을 때 -> Estimate Size를 Automatic에서 None으로 바꿔준다. CollectionView FlowLayout의 Cell 사이즈를 더 명확하게 전달할 수 있다.          
+➡️ 뷰 내의 객체끼리의 우선순위를 Centent Hugging Priority, Content Compression Resistance Priority로 정해줄 수 있다.      
+➡️ DateFormatter()를 사용하여 날짜의 형식을 바꿔줄 수 있다. (String 타입의 날짜를 date로 전환 후 형식을 바꿔준 다음 다시 String으로 전환했다. 이 때 옵셔널 타입이 되므로 if를 통해 바인딩 해주었다.)       
+➡️ 가장 최근의 채팅이 보이도록 viewDidLoad() 내에 sorted(by: )를 사용해 chatList를 정렬했다.       
+➡️ humbnail의 모서리를 둥글게 하기 위해 awakeFromNib()를 호출하고, 이 안에서 Layer.cornerRadius를 설정했다.      
 
 📲 실행 화면  
 
