@@ -8,7 +8,7 @@
 | **4회** | SimpleWeather | Complete |  |  | **2022.05.26** |
 | **5회** | StockRank | Complete |  |  | **2022.05.27** |
 | **6회** | ChatList | Complete |  |  | **2022.05.30** |
-| **7회** |  | Complete |  |  | **2022.05.** |
+| **7회** | AppleFramework | Complete |  |  | **2022.06.10** |
 | **8회** |  | Complete |  |  | **2022.05.** |
 | **9회** |  | Complete |  |  | **2022.05.** |
 | **10회** |  | Complete |  |  | **2022.05.** |
