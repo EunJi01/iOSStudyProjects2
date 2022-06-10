@@ -13,7 +13,7 @@ class ChatListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var chatLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
+        
     func configure(_ chat: Chat) {
         thumbnail.image = UIImage(named: chat.name)
         nameLabel.text = chat.name
