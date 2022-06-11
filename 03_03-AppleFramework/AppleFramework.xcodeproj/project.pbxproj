@@ -16,6 +16,8 @@
 		948CD20C2812AD5F003DC0C4 /* AppleFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD20B2812AD5F003DC0C4 /* AppleFrameworkUITests.swift */; };
 		948CD20E2812AD5F003DC0C4 /* AppleFrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD20D2812AD5F003DC0C4 /* AppleFrameworkUITestsLaunchTests.swift */; };
 		948CD21B2812ADBA003DC0C4 /* FramewokData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD21A2812ADBA003DC0C4 /* FramewokData.swift */; };
+		B676DD5F2854CF6A001120EC /* FrameworkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676DD5E2854CF6A001120EC /* FrameworkListViewController.swift */; };
+		B676DD612854D519001120EC /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676DD602854D519001120EC /* FrameworkCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		948CD20B2812AD5F003DC0C4 /* AppleFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkUITests.swift; sourceTree = "<group>"; };
 		948CD20D2812AD5F003DC0C4 /* AppleFrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		948CD21A2812ADBA003DC0C4 /* FramewokData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewokData.swift; sourceTree = "<group>"; };
+		B676DD5E2854CF6A001120EC /* FrameworkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewController.swift; sourceTree = "<group>"; };
+		B676DD602854D519001120EC /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				948CD1EC2812AD5E003DC0C4 /* SceneDelegate.swift */,
 				948CD21A2812ADBA003DC0C4 /* FramewokData.swift */,
 				948CD1F02812AD5E003DC0C4 /* Main.storyboard */,
+				B676DD5E2854CF6A001120EC /* FrameworkListViewController.swift */,
+				B676DD602854D519001120EC /* FrameworkCell.swift */,
 				948CD1F32812AD5F003DC0C4 /* Assets.xcassets */,
 				948CD1F52812AD5F003DC0C4 /* LaunchScreen.storyboard */,
 				948CD1F82812AD5F003DC0C4 /* Info.plist */,
@@ -261,6 +267,8 @@
 				948CD1EB2812AD5E003DC0C4 /* AppDelegate.swift in Sources */,
 				948CD1ED2812AD5E003DC0C4 /* SceneDelegate.swift in Sources */,
 				948CD21B2812ADBA003DC0C4 /* FramewokData.swift in Sources */,
+				B676DD612854D519001120EC /* FrameworkCell.swift in Sources */,
+				B676DD5F2854CF6A001120EC /* FrameworkListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
