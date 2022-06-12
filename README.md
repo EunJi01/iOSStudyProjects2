@@ -62,7 +62,18 @@
 ➡️ humbnail의 모서리를 둥글게 하기 위해 awakeFromNib()를 호출하고, 이 안에서 Layer.cornerRadius를 설정했다.      
 
 📲 실행 화면  
-[![Simulator Screen Recording - iPhone 11 - 2022-06-10 at 19 42 19](https://user-images.githubusercontent.com/92143918/173048780-624699b0-dfa6-41a1-8324-cad5ad540d0e.gif)
+![Simulator Screen Recording - iPhone 11 - 2022-06-10 at 19 42 19](https://user-images.githubusercontent.com/92143918/173048780-624699b0-dfa6-41a1-8324-cad5ad540d0e.gif)
+</br>
+</br>
+</br>
+
+## **AppleFramework**
+
+➡️       
+➡️       
+
+📲 실행 화면  
+
 </br>
 </br>
 </br>
