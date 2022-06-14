@@ -69,10 +69,18 @@
 
 ## **AppleFramework**
 
-➡️       
-➡️       
+➡️ Framework의 이미지와 이름을 collectionView로 나열하는 어플리케이션   
+➡️ 동작하는 코드는 ViewController에 작성하고, FrameworkCell에는 configure를 만들어 어떤 데이터가 들어갈지만 정해줬다.      
+➡️ Cell끼리 너무 붙어있지 않게 interItemSpacing을 통해 여백을 준 후, width와 height를 정해주어 셀의 크기를 설정했다.       
+➡️ Prefers Large Titles를 체크해 Navigation Bar의 Title를 크게 설정했다.    
+➡️ cell들이 화면 상하단 엣지 부분까지 보이게 하기 위해 CeollectionView의 Vertical Space Constraint를 Safe Area에서 Superview로 바꿔주고, Constant를 0으로 놓았다.
+➡️ 좌우에 여백을 주기 위해 contentInset으로 UIEdgeInsets을 설정했다.     
+➡️ collectionView의 contentInset 프로퍼티에 접근해 UIEdgeInsets를 설정해 padding을 설정했다.
+➡️ Cell이 4열일 때 글자가 잘리는 현상을 방지하기 위해 FrameworkCell에서 awakeFromNib으로 nameLabel.adjustFontSizeToFitWidth = true 설정했다.
+➡️ 각 Cell을 터치했을 경우 didSelectItemAt 메소드를 통해 print로 셀렉된 framework의 이름을 알려준다.
 
 📲 실행 화면  
+![Simulator Screen Recording - iPhone 11 - 2022-06-14 at 20 18 31](https://user-images.githubusercontent.com/92143918/173567068-bc2287e9-c2cf-4cdd-b10a-9d9c56ae92e1.gif)
 
 </br>
 </br>
