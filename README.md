@@ -76,7 +76,7 @@
 ➡️ cell들이 화면 상하단 엣지 부분까지 보이게 하기 위해 CeollectionView의 Vertical Space Constraint를 Safe Area에서 Superview로 바꿔주고, Constant를 0으로 놓았다.     
 ➡️ 좌우에 여백을 주기 위해 contentInset으로 UIEdgeInsets을 설정했다.       
 ➡️ collectionView의 contentInset 프로퍼티에 접근해 UIEdgeInsets를 설정해 padding을 설정했다.      
-➡️ Cell이 4열일 때 글자가 잘리는 현상을 방지하기 위해 FrameworkCell에서 awakeFromNib으로 nameLabel.adjustFontSizeToFitWidth = true 설정했다.      
+➡️ Cell이 4열일 때 글자가 잘리는 현상을 방지하기 위해 FrameworkCell에서 awakeFromNib으로 nameLabel.adjustFontSizeToFitWidth = true 로 설정했다.      
 ➡️ 각 Cell을 터치했을 경우 didSelectItemAt 메소드를 통해 print로 셀렉된 framework의 이름을 알려준다.      
 
 📲 실행 화면  
