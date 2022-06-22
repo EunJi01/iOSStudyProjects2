@@ -69,7 +69,7 @@
 
 ## **AppleFramework**
 
-➡️ Framework의 이미지와 이름을 collectionView로 나열하는 어플리케이션   
+➡️ Framework의 이미지와 이름을 collectionView로 나열하는 어플리케이션 구현   
 ➡️ 동작하는 코드는 ViewController에 작성하고, FrameworkCell에는 configure를 만들어 어떤 데이터가 들어갈지만 정해줬다.      
 ➡️ Cell끼리 너무 붙어있지 않게 interItemSpacing을 통해 여백을 준 후, width와 height를 정해주어 셀의 크기를 설정했다.       
 ➡️ Prefers Large Titles를 체크해 Navigation Bar의 Title를 크게 설정했다.    
