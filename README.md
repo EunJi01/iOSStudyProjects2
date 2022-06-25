@@ -73,7 +73,7 @@
 ➡️ 동작하는 코드는 ViewController에 작성하고, FrameworkCell에는 configure를 만들어 어떤 데이터가 들어갈지만 정해줬다.      
 ➡️ Cell끼리 너무 붙어있지 않게 interItemSpacing을 통해 여백을 준 후, width와 height를 정해주어 셀의 크기를 설정했다.       
 ➡️ Prefers Large Titles를 체크해 Navigation Bar의 Title를 크게 설정했다.    
-➡️ cell들이 화면 상하단 엣지 부분까지 보이게 하기 위해 CeollectionView의 Vertical Space Constraint를 Safe Area에서 Superview로 바꿔주고, Constant를 0으로 놓았다.     
+➡️ cell들이 화면 상하단 엣지 부분까지 보이게 하기 위해 CeollectionView의 Vertical Space Constraint를 Safe Area에서 Superview로 바꿔주고, Constant를 0으로 설정했다.     
 ➡️ 좌우에 여백을 주기 위해 contentInset으로 UIEdgeInsets을 설정했다.       
 ➡️ collectionView의 contentInset 프로퍼티에 접근해 UIEdgeInsets를 설정해 padding을 설정했다.      
 ➡️ Cell이 4열일 때 글자가 잘리는 현상을 방지하기 위해 FrameworkCell에서 awakeFromNib으로 nameLabel.adjustFontSizeToFitWidth = true 로 설정했다.      
