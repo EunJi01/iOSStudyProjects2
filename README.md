@@ -77,7 +77,7 @@
 ➡️ 좌우에 여백을 주기 위해 contentInset으로 UIEdgeInsets을 설정했다.       
 ➡️ collectionView의 contentInset 프로퍼티에 접근해 UIEdgeInsets를 설정해 padding을 설정했다.      
 ➡️ Cell이 4열일 때 글자가 잘리는 현상을 방지하기 위해 FrameworkCell에서 awakeFromNib으로 nameLabel.adjustFontSizeToFitWidth = true 로 설정했다.      
-➡️ 각 Cell을 터치했을 경우 didSelectItemAt 메소드를 통해 print로 셀렉된 framework의 이름을 알려준다.      
+➡️ 각 Cell을 터치했을 경우 didSelectItemAt 메소드를 통해 framework의 이름을 print.      
 
 📲 실행 화면  
 ![Simulator Screen Recording - iPhone 11 - 2022-06-14 at 20 18 31](https://user-images.githubusercontent.com/92143918/173567068-bc2287e9-c2cf-4cdd-b10a-9d9c56ae92e1.gif)
